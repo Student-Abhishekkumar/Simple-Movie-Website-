@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgba(178, 178, 178, 0.586);
+    backdrop-filter: blur(10px);
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+.search-box img{
+    width: 20px;
+    background-color: lightgray;
+    padding: 5px 10px;
+    margin-right: -1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-box input{
+    padding: 7px 30px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+nav a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 10px;
+    text-shadow: 0 0 15px black;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    color: cyan;
+}
+
+/* corousel */
+.corousel{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin-top: -70px;
+}
+
+.corousel .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
