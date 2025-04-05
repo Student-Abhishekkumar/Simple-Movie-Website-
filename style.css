@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: black;
     color: white;
-    font-family: poppins;
+    font-family: Helvetica;
 }
 
 header{
@@ -62,7 +62,7 @@ nav a{
 }
 
 nav a:hover{
-    color: cyan;
+    color: red;
 }
 
 /* corousel */
@@ -79,4 +79,174 @@ nav a:hover{
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
+}
+
+.corousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.corousel .list .item .content{
+    position: absolute;
+    top: 10%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-100%);
+    padding-left: 30%;
+    box-sizing: border-box;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.814);
+}
+
+.content h1{
+    font-size: 65px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.details{
+    display: flex;
+    text-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.details p{
+    border-right: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+    padding: 0 10px;
+}
+
+.details p:last-child{
+    border: none;
+}
+
+.content h4{
+    max-width: 400%;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 40px 0;
+}
+
+.corousel .button{
+    display: flex;
+}
+
+.download-btn{
+    width: 150px;
+    padding: 12px 0;
+    font-weight: bold;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.522);
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.4px;
+    cursor: pointer;
+}
+
+.trailer-btn{
+    width: 150px;
+    padding: 12px 0;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.522);
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.4px;
+    cursor: pointer; 
+}
+
+.buttons button:hover{
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.47);
+}
+
+.vid-box{
+    border: 5px solid #ffcc00;
+    width: 250px;
+    height: 155px;
+    border-radius: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.814);
+}
+
+.vid-box video{
+    width: 250px;
+    height: 155px;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+    background-color: rgba(178, 178, 178, 0.586);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.471);
+}
+
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    mix-blend-mode: lighten;
+}
+
+.thumbnail .item .thum-content{
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    right: 10px;
+}
+
+/* arrows */
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 42%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: lightgray;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.arrows button:hover{
+    background-color: lightgray;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.471);
 }
